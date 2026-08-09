@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>E-Shopping Cart System</title>
+        <style>
+            body{
+                background-color: beige;
+                color:solid black;
+            }
+
+            h1,h2{
+                display:flex;
+                justify-content: center;
+            }
+
+            button{
+                background-color: #fff;
+                box-shadow: 0px 10px 20px rgba(0,0,0,0.3);
+                padding:10px;
+            }
+
+            .product{
+                display:flex;
+                gap:50px;
+                justify-content: space-around;
+            }
+
+            .laptop{
+                border:3px solid black;
+                padding : 30px;
+            }
+
+            .mobile{
+                border:3px solid black;
+                padding: 30px;
+            }
+
+            .tv{
+                border:3px solid black;
+                padding: 30px;
+            }
+
+            .amount{
+                display:flex;
+                justify-content: center;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Online Shopping System</h1>
+
+        <h2>Product Details</h2>
+        <div class="product">
+        <div class="laptop">
+            <img src="laptop-with-sun-background_1232-429.avif" ref="laptop-image" width="300">
+            <p>Laptop : Rs.50000</p>
+            <button onclick="addToCart(50000)">Add To Cart</button><br><br>
+        </div>
+
+        <div class="mobile">
+            <img src="vivo-mobile-phone-7-38mm-ultra-smooth-body-170g-light-2-5d-adjusted-outline-for-a-great-hold-703.jpg" ref="mobile" width="200">
+            <p>Mobile : Rs.20000</p>
+            <button onclick="addToCart(20000)">Add To Cart</button><br><br>
+        </div>
+
+        <div class="tv">
+            <img src="ai-generated-close-up-hand-man-controlling-washing-machine-with-mobile-app-at-smart-home-free-photo.jpg" ref="TV" width="300">
+            <p>TV : Rs.40000</p>
+            <button onclick="addToCart(40000)">Add To Cart</button><br><br>
+        </div>
+        </div>
+        <h2 class="amount">Total Amount :<span id="total"> 0</span></h2>
+        <script>
+            let total=0;
+            function addToCart(price){
+                total+=price;
+                document.getElementById("total").innerHTML= total;
+            }
+        </script>
+    </body>
+</html>

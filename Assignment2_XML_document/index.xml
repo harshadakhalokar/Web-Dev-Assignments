@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE Employees [
+
+<!ELEMENT Employees (Employee+)>
+
+<!ELEMENT Employee (EmpID, Name, Department, Designation, Salary, Email, Phone)>
+
+<!ELEMENT EmpID (#PCDATA)>
+<!ELEMENT Name (#PCDATA)>
+<!ELEMENT Department (#PCDATA)>
+<!ELEMENT Designation (#PCDATA)>
+<!ELEMENT Salary (#PCDATA)>
+<!ELEMENT Email (#PCDATA)>
+<!ELEMENT Phone (#PCDATA)>
+
+]>
+
+<Employees>
+
+    <Employee>
+        <EmpID>E101</EmpID>
+        <Name>Harshada Khalokar</Name>
+        <Department>Computer</Department>
+        <Designation>Software Engineer</Designation>
+        <Salary>60000</Salary>
+        <Email>harshada@example.com</Email>
+        <Phone>9876543210</Phone>
+    </Employee>
+
+    <Employee>
+        <EmpID>E102</EmpID>
+        <Name>Rahul Sharma</Name>
+        <Department>HR</Department>
+        <Designation>HR Manager</Designation>
+        <Salary>55000</Salary>
+        <Email>rahul@example.com</Email>
+        <Phone>9876501234</Phone>
+    </Employee>
+
+    <Employee>
+        <EmpID>E103</EmpID>
+        <Name>Priya Patil</Name>
+        <Department>Finance</Department>
+        <Designation>Accountant</Designation>
+        <Salary>50000</Salary>
+        <Email>priya@example.com</Email>
+        <Phone>9876512345</Phone>
+    </Employee>
+
+</Employees>

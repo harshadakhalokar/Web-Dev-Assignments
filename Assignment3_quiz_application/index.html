@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Quiz Application</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 20px;
+        }
+
+        .quiz-box {
+            background: white;
+            padding: 20px;
+            width: 500px;
+            margin: auto;
+            border-radius: 10px;
+            box-shadow: 0 0 10px gray;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        button {
+            display:flex;
+            margin-top: 15px;
+            padding: 10px 20px;
+            font-size: 16px;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #result {
+            margin-top: 20px;
+            font-size: 18px;
+            font-weight: bold;
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="quiz-box">
+
+<h2>Online Quiz</h2>
+
+<form id="quizForm">
+
+<p><b>1. Which language is used for web pages?</b></p>
+<input type="radio" name="q1" value="HTML"> HTML<br>
+<input type="radio" name="q1" value="Java"> Java<br>
+<input type="radio" name="q1" value="Python"> Python<br>
+
+<p><b>2. Which tag is used to create a hyperlink?</b></p>
+<input type="radio" name="q2" value="img"> img<br>
+<input type="radio" name="q2" value="a"> a<br>
+<input type="radio" name="q2" value="table"> table<br>
+
+<p><b>3. JavaScript is a ________ language.</b></p>
+<input type="radio" name="q3" value="Programming"> Programming<br>
+<input type="radio" name="q3" value="Markup"> Markup<br>
+<input type="radio" name="q3" value="Database"> Database<br>
+
+<p><b>4. Which CSS property is used to change the text color?</b></p>
+<input type="radio" name="q4" value="font-color">font-color<br>
+<input type="radio" name="q4" value="background-color">background-color<br>
+<input type="radio" name="q4" value="color">color<br>
+
+<button type="button" onclick="checkScore()">Submit</button>
+
+</form>
+
+<p id="result"></p>
+
+</div>
+
+<script>
+
+function checkScore()
+{
+    let score = 0;
+
+    if(document.querySelector('input[name="q1"]:checked')?.value=="HTML")
+        score++;
+
+    if(document.querySelector('input[name="q2"]:checked')?.value=="a")
+        score++;
+
+    if(document.querySelector('input[name="q3"]:checked')?.value=="Programming")
+        score++;
+
+    if(document.querySelector('input[name="q4"]:checked')?.value=="color")
+        score++;
+    document.getElementById("result").innerHTML =
+    "Your Score = " + score + " / 4";
+}
+
+</script>
+
+</body>
+</html>
