@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ShopNest | Product Listing</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <header class="navbar">
+
+        <div class="logo">
+            Shop<span>Nest</span>
+        </div>
+
+        <nav>
+            <a href="#">Home</a>
+            <a href="#products">Products</a>
+            <a href="#">Deals</a>
+            <a href="#">Contact</a>
+        </nav>
+
+        <div class="cart">
+            🛒 <span id="cart-count">0</span>
+        </div>
+
+    </header>
+
+
+    <!-- Hero Section -->
+    <section class="hero">
+
+        <div>
+
+            <p class="tagline">
+                ✨ Smart shopping starts here
+            </p>
+
+            <h1>
+                Discover products
+                <br>
+                <span>you'll love.</span>
+            </h1>
+
+            <p class="hero-text">
+                Explore our hand-picked collection of stylish,
+                useful and affordable products.
+            </p>
+
+            <a href="#products" class="shop-btn">
+                Shop Now →
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- Product Section -->
+    <main id="products" class="container">
+
+        <div class="section-heading">
+
+            <div>
+
+                <p class="mini-title">
+                    OUR COLLECTION
+                </p>
+
+                <h2>
+                    Featured Products
+                </h2>
+
+            </div>
+
+
+            <!-- Search and Category -->
+            <div class="controls">
+
+                <input
+                    type="text"
+                    id="search"
+                    placeholder="🔍 Search products..."
+                >
+
+                <select id="category">
+
+                    <option value="all">
+                        All Categories
+                    </option>
+
+                </select>
+
+            </div>
+
+        </div>
+
+
+        <p id="status" class="status">
+            Loading products...
+        </p>
+
+
+        <!-- Products will be inserted here using JavaScript -->
+        <div id="product-container" class="product-grid">
+        </div>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <p>
+            © 2026 ShopNest • Built using HTML, CSS, JavaScript & AJAX
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
