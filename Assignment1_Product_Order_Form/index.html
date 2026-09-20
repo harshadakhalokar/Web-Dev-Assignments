@@ -1,0 +1,83 @@
+<DOCTYPE html>
+    <html>
+        <head>
+            <title>Product Order Form</title>
+            <link rel="stylesheet" href="style.css">
+        </head>
+    
+        <body>
+            <main class="container">
+                <h1>Product Order Form</h1>
+                <form>
+                    <fieldset>
+                        <legend>
+                            Customer Information
+                        </legend>
+
+                        <label for="name">Name : </label>
+                        <input type="text" id="name" name="customername" placeholder="Enter Your Name" required><br><br>
+
+                        <label for="email">Email : </label>
+                        <input type="email" id="email" name="email" placeholder="example@gmail.com" required><br><br>
+
+                        <label>Address : </label>
+                        <textarea name="Address" rows="4" cols="40" placeholder="Enter Address"required></textarea><br><br>
+
+                        <label>Contact No : </label>
+                        <input type="tel" maxlength="10"><br><br>
+
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Product Table</legend>
+
+                        <table>
+                            <tr class="table-top">
+                                <th>Select</th>
+                                <th>Product Name </th>
+                                <th>Price</th>
+                                <th>Quantity</th>
+                            </tr>
+
+                            <tr>
+                                <td><input type="checkbox" name="product" value="mobile"></td>
+                                <td> Mobile </td>
+                                <td> Rs.20,000 </td>
+                                <td><input type="number" min="1" max="5" name="payment"></td>
+                            </tr>
+
+                            <tr>
+                                <td><input type="checkbox" name="product" value="laptop"></td>
+                                <td> Laptop </td>
+                                <td>Rs.50,000</td>
+                                <td><input type="number" min="1" max="5" name="payment"></td>
+                            </tr>
+
+                            <tr>
+                                <td><input type="checkbox" name="product" value="ipad"></td>
+                                <td> Ipad </td>
+                                <td>Rs.75,000</td>
+                                <td><input type="number" min="1" max="5" name="payment"></td>
+                            </tr>
+                        </table>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Payment Method</legend>
+                            <label>Cash</label>
+                            <input type="radio" name="payment"><br>
+
+                            <label>Online Payment</label>
+                            <input type="radio" name="payment">
+                    </fieldset>
+                    
+                    <div class="button-group">
+                        <button type="submit" class="submit">Place Order</button>
+                    
+                        <button type="submit" class="reset">Reset</button>
+                    </div>
+                </form>
+            </main>
+        </body>
+    </html>
+</DOCTYPE>

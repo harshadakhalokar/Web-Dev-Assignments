@@ -1,0 +1,82 @@
+.container{
+    background-color:white;
+    max-width:800px;
+    width:90%;
+    margin:auto;
+    padding:30px;
+    border-radius: 10px;
+}
+
+body{
+    background-color: #f5f5f5;
+}
+h1{
+    text-align: center;
+}
+
+legend{
+    font-size:18px;
+    color:green;
+}
+            
+.table-top{
+    background-color:rgb(91, 245, 91);
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+th,td{
+    border:1px solid gray;
+    padding:10px;
+    text-align:center;
+}
+
+button{
+    padding:10px 20px;
+    background:green;
+    color:white;
+    border:none;
+    border-radius:6px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:darkgreen;
+}
+
+fieldset{
+    margin-bottom:20px;
+    padding:20px;
+}
+
+.button-group{
+    display:flex;
+    justify-content:center;
+    gap:15px;
+    margin-top: 20px;
+}
+
+.submit{
+    background-color: green;
+    color: white;
+}
+
+.submit:hover{
+    background-color: darkgreen;
+}
+
+.reset{
+    background-color: crimson;
+    color: white;
+}
+
+.reset:hover{
+    background-color: darkred;
+}
+
+label{
+    vertical-align: top;
+}
